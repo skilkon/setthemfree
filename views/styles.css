@@ -1,0 +1,39 @@
+body{
+  
+
+ 	*{font-family: "Comic Sans MS", sans-serif;
+    background-image: url("http://thealibi.com/wp-content/uploads/2015/03/cocktails.jpg");}
+
+   a{ color: wheat;
+     font-size: 30px;}
+  
+  .bgimg{
+  	background-image: url('http://smashingyolo.com/wp-content/uploads/2014/05/Best-Website-Background-Images10.jpg');
+  	background-position: center;
+    background-size: cover;
+  }
+
+  h1{ text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+       }
+  h2{ font-weight: bold; }
+
+     
+
+.info  {
+  text-align: left;
+  bottom: -10px;
+  color: wheat;
+  margin-left: 36px;
+  
+  }
+  
+
+img{
+    position: absolute;
+    float: left;
+   }
+
+
+}
