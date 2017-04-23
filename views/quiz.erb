@@ -1,15 +1,16 @@
  <h2>Which cocktail suits you the most?</h2>
+ <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Give You Glory">
 <style>
 h2{
 	color: CadetBlue;
 	font-size: 30px;
 }
-body{ background-image: url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/10/free-fire-water-cocktail-hd-wallpapers-1280x800.jpg");
+body{ background-image: url("https://images5.alphacoders.com/409/409133.jpg");
       background-repeat: no-repeat;
       background-size: 1200px; }
 
- h4{  font-family: "Shadows Into Light", sans-serif;
-      color: cadetblue; 
+ h4{  font-family: "Give You Glory", sans-serif;
+      color: midnightblue; 
       font-size: 20px;
   }     
 input[type=radio] {
@@ -19,19 +20,32 @@ input[type=radio] {
 
 </style>
 
+
+<div class="quiz_form">
 <h4> <li> Which color do you like the most? </li> </h4>
-<form> 
- <input type="radio"name="color" value="red" checked> Red <brb>
- <input type="radio"name="color" value="orange" checked> Orange <brb>
- <input type="radio"name="color" value="white" checked> White <brb>
- </form>
+
+<form action="/quiz_submission" name="quiz_submission" method="POST"> 
+ <input type="radio"name="color" value="red" checked> <label> Red </label><brb>
+ <input type="radio"name="color" value="gold" checked><label> Gold </label><brb>
+ <input type="radio"name="color" value="white" checked> <label>White</label> <brb>
 
 <h4> <li> What would your friends describe you most like? </li></h4>
-<form>
-<input type="radio"name="trait" value="seductive" checked> Seductive <brb>
- <input type="radio"name="trait" value="confident, fun-loving" checked> Confident, Fun-loving <brb>
-<input type="radio"name="trait" value="Intelligent " checked> Red <brb>
+<input type="radio"name="trait" value="seductive" checked><label> Seductive</label> <brb>
+ <input type="radio"name="trait" value="confident, fun-loving" checked> <label>Confident </label> <brb>
+<input type="radio"name="trait" value="Intelligent" checked><label>Intelligent  </label><brb>
+<input type="radio" name="trait" value="Fun,loving" checked><label>Fun,loving </label><brb>
+
+<h4><li> What would you be most likely doing on a Friday night?</li></h4>
+<input type="radio" name="time" value="Partying" checked><label> Partying</label><brb>
+<input type="radio" name="time" value="Write a novel/book" checked><label> Write a novel/poem</label><brb>
+
+<h4><li>Do you drink with a straw, or straight from the glass?</li></h4>
+<input type="radio" name="way" value="With a straw" checked><label> With a straw</label><brb>
+<input type="radio" name="way" value="Straight from the glass" checked><label> Straight from the glass</label><brb>
+<br>
+
+<input type="submit" value="Submit" />
 </form>
 
 
-
+</div>

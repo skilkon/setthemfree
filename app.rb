@@ -1,33 +1,88 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 
-get('/') do 
-	puts @sum 
-	erb :index	
-end
 
-get('/the/beverages/quiz') do
+
+
+get('/') do
+ erb :main_page	
+end	
+
+
+get('/quiz_six')do
+ erb :quiz_six
+end 
+
+post('/quiz_submission') do 
+  if params[:babydolphin]== "Calf" && params[:train]== "food deprivation" && params[:captive]=="the united states"&& params[:miles]=="40 miles" && params[:ban]=="Bolivia" && params[:pay]=="USD 215"
+   
+
+   redirect to('/quiz_six')
+  end
+end
+ 
+
+
+
+
+get('/quiz_five')do
+ erb :quiz_five
+end 
+
+post('/quiz_submission') do 
+  if params[:babydolphin]== "Calf" || params[:train]== "food deprivation" || params[:captive]=="the united states" || params[:miles]=="10 miles" || params[:ban]=="Bolivia" || params[:pay]=="USD 215"
   
 
-  erb :quiz 
-
- end 
-
-get('/the/beverages/guide') do
-
-erb :main_page
-	
-end	
-get('/the/beverages/make/a/cocktail') do
-
-erb :make_a_cocktail
-
+   redirect to('/quiz_five')
+  end  
 end
 
 
 
-post('/signup') do
-	puts params[:name]
-	puts params[:email]
 
+
+
+
+
+
+
+
+get('/quiz_submission')do
+ redirect '/wine'
+ erb :quiz_submission
+end 
+
+
+
+post('/contact') do
+	puts params[:fname]
+	puts params[:email]
+	require 'pony'
+
+    Pony.options = {
+     :via => 'smtp',
+     :via_options => {
+    	:address => 'smtp.mailgun.org',
+	    :port=> '587',
+	    :enable_starttls_auto => true,
+	    :authentication => :plain,
+	    :user_name =>'postmaster@sandboxe6ddf673c0c24f8ba8af6b61e4b420b6.mailgun.org',
+	    :password => '7c235f578f6119ad3617dabfd161b661'
+      }	
+    }
+      message = {
+	    :from => 'skilkon@gmail.com',
+	    :to => params[:email],
+	    :subject => 'Welcome ' + params[:fname] ,
+	    :body => 'Thank you for signing up to our newsletter! :)'
+      }
+
+  Pony.mail(message)
+redirect ('/newsletter_sub')
 end	
+
+
+get('/newsletter_sub') do
+  erb :newsletter_sub
+end  
+
