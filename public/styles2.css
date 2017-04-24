@@ -97,6 +97,15 @@ body{ font-family: 'Asar', serif;
 
 }
 
+
+#answers{
+  background-image: url('https://images6.alphacoders.com/328/328209.jpg');
+  background-size: 1410px;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 1490px;
+}
+
 #mostimp{
   text-align: center;
   color: red;
@@ -205,6 +214,8 @@ h4{font-family: "Aser", serif;
   border-radius: 5px;
     z-index: 10;
 }
+
+
 
 .takeaction{
   overflow: auto;

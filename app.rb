@@ -40,7 +40,7 @@ end
 
 
 get('/quiz_submission')do
- redirect '/wine'
+ 
  erb :quiz_submission
 end 
 
