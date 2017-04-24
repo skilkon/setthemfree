@@ -17,26 +17,23 @@ post('/quiz_submission') do
   if params[:babydolphin]== "Calf" && params[:train]== "food deprivation" && params[:captive]=="the united states"&& params[:miles]=="40 miles" && params[:ban]=="Bolivia" && params[:pay]=="USD 215"
    
 
-   redirect to('/quiz_six')
+    return redirect to('/quiz_six')
+
+   else
+   
+   return redirect to('quiz_submission') 
+
   end
 end
  
 
 
-get('/quiz_five')do
- erb :quiz_five
-end 
 
-post('/quiz_submission') do 
-  if params[:babydolphin]!= "Calf" && params[:train]== "food deprivation" && params[:captive]=="the united states" && params[:miles]=="40 miles" && params[:ban]=="Bolivia" && params[:pay]=="USD 215"
-  
 
-   redirect to('/quiz_five')
-  end  
+
+post('/quiz_submission')do
+erb :quiz_submission
 end
-
-
-
 
 
 get('/quiz_submission')do
