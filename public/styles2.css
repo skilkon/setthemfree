@@ -13,8 +13,8 @@ body{ font-family: 'Asar', serif;
 
 #poll{
   overflow: auto;
-  top: 1800px;
-  right: -150px;
+  top: 1600px;
+  right: -310px;
   position: relative;
   padding: 30px;
   border-radius: 5px;
@@ -24,6 +24,7 @@ body{ font-family: 'Asar', serif;
   position: center;
   margin-bottom: 120px;
   z-index: 10;
+
 }
 
 #pollheader{
@@ -58,7 +59,7 @@ body{ font-family: 'Asar', serif;
      text-align: center;
      padding: 14px 16px;
      text-decoration: none;
-     background-color: blue;
+     background-color: mediumblue;
      border-radius: 20px;
      
 }
@@ -84,22 +85,29 @@ body{ font-family: 'Asar', serif;
   background-image: url('https://images7.alphacoders.com/398/398160.jpg');
   background-size: cover;
   height:800px;
-  width: 1430px;
+  width: 1490px;
   position: fixed;
   top: 65px;
   background-size: 100% 100%; 
-  background-position: -70px -200px;
+  background-position: -80px -200px;
   background-repeat: no-repeat;
-  background-size: 2000px;
+  background-size: 2010px;
   z-index: 0;
 
 
 }
 
+#mostimp{
+  text-align: center;
+  color: red;
+}
+#center{
+  text-align: center;
+}
 
 #quizheader{ text-align: center;
   font-family: "Graduate", cursive;
-  font-size: 40px;
+  font-size: 35px;
   text-decoration: underline;
 }
 
@@ -131,10 +139,17 @@ h1{ text-align: center;
     position: relative;
     top: 90px;
    }
-   
+  
+#aboutheaders{
+  text-align: center;
+  font-weight: 150;
+}
+
 #firstp{
   text-indent: 20px;
   bottom: -490px;
+  margin-left: 30px;
+  margin-right: 30px;
 } 
 
 .margin{
@@ -183,7 +198,7 @@ h4{font-family: "Aser", serif;
   position: relative;
   bottom: -838px;
   background-color: #f2f2f2;
-  opacity: 1;
+  opacity: 0.9;
   max-height: 2000px;
   width: 1300px;
   right: -75px;
@@ -196,7 +211,7 @@ h4{font-family: "Aser", serif;
   position: relative;
   bottom: -1000px;
   background-color: #f2f2f2;
-  opacity: 1;
+  opacity: 0.9;
   border-radius: 5px;
   width: 1300px;
   right: -75px;
@@ -213,15 +228,16 @@ h4{font-family: "Aser", serif;
   position: relative;
   bottom: -1300px;
   background-color: #f2f2f2;
-  
+  opacity: 0.9;
   max-height: 1800px;
   width: 800px;
-  right: -75px;
+  right: -275px;
+
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
   z-index: 10;
-  /*background: url("http://www.wernerlau.com/blog/media/blogs/fili/115_1dolphins.jpg");*/
+  
     
     
     
@@ -242,6 +258,7 @@ h4{font-family: "Aser", serif;
 
 .pollform{
   bottom: -2500px;
+  right: -275px;
 }
 
 
@@ -263,12 +280,13 @@ h4{font-family: "Aser", serif;
   font-family: "Aser";}
   
 .contact_form {
-  position: fixed;
+  position: relative;
   bottom: 2px;
   color: black;
   font-family: "Aser";
   font-size: 110%;
   z-index: 10;
+  
 }
 
 #contactheader{
@@ -314,12 +332,13 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    bottom: -1050px;
+    bottom: -1150px;
     position: relative;
     overflow: auto;
     width: 800px;
-    right: -75px;
+    right: -275px;
     z-index: 10;
+    opacity: 0.9;
 
 }
 
