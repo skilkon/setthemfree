@@ -23,14 +23,12 @@ end
  
 
 
-
-
 get('/quiz_five')do
  erb :quiz_five
 end 
 
 post('/quiz_submission') do 
-  if params[:babydolphin]== "Calf" || params[:train]== "food deprivation" || params[:captive]=="the united states" || params[:miles]=="10 miles" || params[:ban]=="Bolivia" || params[:pay]=="USD 215"
+  if params[:babydolphin]!= "Calf" && params[:train]== "food deprivation" && params[:captive]=="the united states" && params[:miles]=="40 miles" && params[:ban]=="Bolivia" && params[:pay]=="USD 215"
   
 
    redirect to('/quiz_five')
@@ -41,16 +39,14 @@ end
 
 
 
-
-
-
-
-
-
 get('/quiz_submission')do
  redirect '/wine'
  erb :quiz_submission
 end 
+
+
+
+
 
 
 
